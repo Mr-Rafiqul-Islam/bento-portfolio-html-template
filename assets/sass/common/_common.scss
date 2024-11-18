@@ -1,0 +1,107 @@
+/*
+  Theme Name: Bentofolio - Bootstrap Personal Portfolio Template
+  Support: marveltheme@gmail.com
+  Description: Bentofolio - Bootstrap Personal Portfolio Template
+  Version: 1.0
+*/
+
+/* CSS Index
+============================
+01. Variable CSS
+02. Common CSS
+03. Header
+04. Home
+05. About
+06. Services
+07. Portfolio
+08. Blog
+09. Contact
+10. Footer
+11. Theme Control
+============================
+*/
+
+/*=============================
+	1. Google Fonts
+===============================*/
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*=============================
+	01. Variable CSS start
+===============================*/
+:root,
+[data-bs-theme="light"] {
+  --primary-color: #4770ff;
+  --text-color-one:#1A1F2C;
+  --text-color-two:#576076;
+  --text-color-three:#1A1F2C;
+  --text-color-four:#8991A7;
+  --text-color-five:#19202B;
+  --text-color-six:#ffffff;
+  --bg-color-one:#1A1F2C;
+  --bg-color-two:#F0F2F5;
+  --bg-color-three: #FFFFFF;
+  --bg-color-four: #F5F7F9;
+  --body-background: #F0F2F5;
+  --border-color: #DBDFE5;
+  --font-family: "Bricolage Grotesque", sans-serif;
+  --font-family-2: "Inter", sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+  --transition: all 0.3s linear;
+  --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
+}
+
+[data-bs-theme="dark"] {
+  --primary-color: #4770ff;
+  --text-color-one:#FFFFFF;
+  --text-color-two:#576076;
+  --text-color-three:#B9BED1;
+  --text-color-four:#8991A7;
+  --text-color-five:#FFFFFF;
+  --text-color-six:#FFFFFF;
+  --bg-color-one:#0E1018;
+  --bg-color-two:#0E1018;
+  --bg-color-three: #000000;
+  --bg-color-four: #0B0D13;
+  --body-background: #0B0C12;
+  --border-color: #1A1F2C;
+  --font-family: "Bricolage Grotesque", sans-serif;
+  --font-family-2: "Inter", sans-serif;
+  --font-size: 16px;
+  --font-weight: 500;
+  --transition: all 0.3s linear;
+  --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
+}
+/*=============================
+	02. Common CSS start
+===============================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+a,
+button {
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
