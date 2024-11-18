@@ -105,3 +105,13 @@ ol {
   margin: 0;
   padding: 0;
 }
+
+body{
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  color: var(--text-color-one);
+  background: var(--body-background);
+  overflow-x: hidden;
+  line-height: 160%;
+}
