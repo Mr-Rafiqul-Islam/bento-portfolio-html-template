@@ -1,3 +1,97 @@
 /*=============================
 	03. Header CSS start
 ===============================*/
+.header-section{
+	margin-top: 24px;
+	.navbar{
+		.container{
+			background: var(--bg-color-three);
+			border-radius: 16px;
+			padding: 10px 10px 10px 24px;
+		}
+		.navbar-brand{
+			color: var(--text-color-one);
+			gap: 12px;
+			font-size: 24px;
+			line-height: 120%;
+			font-weight: 600;
+			.logo-name{
+				span{
+					color: var(--primary-color);
+				}
+			}
+		}
+		.navbar-nav{
+			.nav-item{
+				.nav-link{
+					color: var(--text-color-two);
+					font-size: 16px;
+					font-weight: 500;
+					line-height: 120%;
+					gap: 8px;
+					padding: 8px 12px;
+					border-radius: 8px;
+					svg{
+						stroke: var(--text-color-four);
+						stroke-width: 1.2;
+						transition: var(--transition);
+						width: 20px;
+  						height: 20px;
+					}
+					&.active{
+						background: var(--bg-color-two);
+						color: var(--text-color-one);
+						svg{
+							stroke: var(--text-color-one);
+						}
+					}
+					&:hover{
+						background: var(--bg-color-two);
+						color: var(--text-color-one);
+						svg{
+							stroke: var(--text-color-one);
+						}
+					}
+				}
+			}
+		}
+		.header-action{
+			.theme-control-btn{
+				margin-right: 16px;
+			}
+			.lets-talk-btn{
+				background: var(--bg-color-one);
+				color: var(--text-color-four);
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 120%;
+				padding: 16px 24px;
+				border-radius: 8px;
+				position: relative;
+				z-index: 9;
+				svg{
+					margin-left: 8px;
+				}
+				&::before{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 0;
+					height: 0;
+					transition: var(--transition);
+					transform: translate(-50%, -50%);
+					background: var(--primary-color);
+					content: "";
+					z-index: -1;
+					border-radius: 8px;
+				}
+				&:hover{
+					&::before{
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+	}
+}
