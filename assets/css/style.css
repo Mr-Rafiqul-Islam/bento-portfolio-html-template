@@ -22,7 +22,7 @@
 /*=============================
 	1. Google Fonts
 ===============================*/
-@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
 /*=============================
 	01. Variable CSS start
 ===============================*/
@@ -122,7 +122,7 @@ body {
 	03. Header CSS start
 ===============================*/
 .header-section {
-  margin-top: 24px;
+  margin: 24px 0px;
 }
 .header-section .navbar .container {
   background: var(--bg-color-three);
@@ -130,7 +130,7 @@ body {
   padding: 10px 10px 10px 24px;
 }
 .header-section .navbar .navbar-brand {
-  color: var(--text-color-one);
+  color: var(--text-color-one) !important;
   gap: 12px;
   font-size: 24px;
   line-height: 120%;
@@ -175,7 +175,7 @@ body {
 }
 .header-section .navbar .header-action .lets-talk-btn {
   background: var(--bg-color-one);
-  color: var(--text-color-four);
+  color: var(--text-color-six);
   font-size: 16px;
   font-weight: 600;
   line-height: 120%;
@@ -183,6 +183,7 @@ body {
   border-radius: 8px;
   position: relative;
   z-index: 9;
+  font-family: "Sora", sans-serif;
 }
 .header-section .navbar .header-action .lets-talk-btn svg {
   margin-left: 8px;

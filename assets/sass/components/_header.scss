@@ -2,7 +2,7 @@
 	03. Header CSS start
 ===============================*/
 .header-section{
-	margin-top: 24px;
+	margin: 24px 0px;
 	.navbar{
 		.container{
 			background: var(--bg-color-three);
@@ -10,11 +10,12 @@
 			padding: 10px 10px 10px 24px;
 		}
 		.navbar-brand{
-			color: var(--text-color-one);
+			color: var(--text-color-one) !important;
 			gap: 12px;
 			font-size: 24px;
 			line-height: 120%;
 			font-weight: 600;
+			
 			.logo-name{
 				span{
 					color: var(--primary-color);
@@ -61,7 +62,7 @@
 			}
 			.lets-talk-btn{
 				background: var(--bg-color-one);
-				color: var(--text-color-four);
+				color: var(--text-color-six);
 				font-size: 16px;
 				font-weight: 600;
 				line-height: 120%;
@@ -69,6 +70,7 @@
 				border-radius: 8px;
 				position: relative;
 				z-index: 9;
+				font-family: "Sora", sans-serif;
 				svg{
 					margin-left: 8px;
 				}
