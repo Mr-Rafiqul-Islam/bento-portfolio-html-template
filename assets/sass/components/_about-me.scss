@@ -11,4 +11,14 @@ margin-bottom: 24px;
     .theme-btn-primary{
         margin-right: 8px;
     }
+    .about-me-social-icons{
+        margin-top: 34px;
+        gap:8px;
+        a{
+            color: var(--text-color-two);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 120%;
+        }
+    }
 }
