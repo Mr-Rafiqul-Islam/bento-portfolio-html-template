@@ -192,10 +192,16 @@ body {
 .header-section {
   margin: 24px 0px;
 }
-.header-section .navbar .container {
+.header-section .navbar {
+  padding: 0px;
+}
+.header-section .navbar .navbar-inner {
   background: var(--bg-color-three);
   border-radius: 16px;
   padding: 10px 10px 10px 24px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  width: 100%;
 }
 .header-section .navbar .navbar-brand {
   color: var(--text-color-one) !important;
