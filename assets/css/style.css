@@ -260,7 +260,7 @@ body {
   font-size: 24px;
   line-height: 110%;
   color: var(--text-color-one);
-  margin-bottom: 8px;
+  margin-bottom: 24px;
 }
 .card .card-body .card-text {
   font-family: var(--font-family-2);
@@ -281,6 +281,9 @@ body {
   margin-bottom: 24px;
 }
 
+.about-me-content .card-title {
+  margin-bottom: 8px !important;
+}
 .about-me-content .btn-grp {
   margin-top: 24px;
 }
@@ -314,4 +317,58 @@ body {
 }
 .about-me-content .about-me-social-icons a:hover {
   color: var(--primary-color);
+}
+
+.work-experience-card .work-experience-content {
+  height: 204px;
+  overflow-y: auto;
+}
+.work-experience-card .work-experience-content .company-tiles .year {
+  width: 129px;
+  height: 15px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 110%;
+  color: var(--text-color-two);
+}
+.work-experience-card .work-experience-content .company-tiles .company {
+  gap: 12px;
+}
+.work-experience-card .work-experience-content .company-tiles .company .company-img {
+  width: 30px;
+  height: 30px;
+  background: var(--bg-color-two);
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.work-experience-card .work-experience-content .company-tiles .company .company-img img {
+  width: 20px;
+  height: 20px;
+}
+.work-experience-card .work-experience-content .company-tiles .company .company-details .company-name {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 110%;
+  color: var(--text-color-one);
+}
+.work-experience-card .work-experience-content .company-tiles .company .company-details .company-role {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 110%;
+  color: var(--text-color-two);
+  margin-top: 8px;
 }
