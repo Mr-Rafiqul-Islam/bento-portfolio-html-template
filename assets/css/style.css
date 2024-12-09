@@ -319,11 +319,53 @@ body {
   color: var(--primary-color);
 }
 
+.work-experience-card {
+  position: relative;
+}
+.work-experience-card::before {
+  width: 100%;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(#FFF));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 0%, #FFF 100%);
+  z-index: 99;
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  content: "";
+}
 .work-experience-card .work-experience-content {
   height: 204px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
-.work-experience-card .work-experience-content .company-tiles .year {
+.work-experience-card .work-experience-content:hover .work-experience-slider {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.work-experience-card .work-experience-content .work-experience-slider {
+  -webkit-animation: scrollY 5s linear infinite;
+          animation: scrollY 5s linear infinite;
+}
+@-webkit-keyframes scrollY {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(calc(-100% - 24px));
+            transform: translateY(calc(-100% - 24px));
+  }
+}
+@keyframes scrollY {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(calc(-100% - 24px));
+            transform: translateY(calc(-100% - 24px));
+  }
+}
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .year {
   width: 129px;
   height: 15px;
   font-family: var(--font-family);
@@ -333,10 +375,10 @@ body {
   line-height: 110%;
   color: var(--text-color-two);
 }
-.work-experience-card .work-experience-content .company-tiles .company {
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .company {
   gap: 12px;
 }
-.work-experience-card .work-experience-content .company-tiles .company .company-img {
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .company .company-img {
   width: 30px;
   height: 30px;
   background: var(--bg-color-two);
@@ -351,11 +393,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.work-experience-card .work-experience-content .company-tiles .company .company-img img {
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .company .company-img img {
   width: 20px;
   height: 20px;
 }
-.work-experience-card .work-experience-content .company-tiles .company .company-details .company-name {
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .company .company-details .company-name {
   font-family: var(--font-family);
   font-style: normal;
   font-weight: 600;
@@ -363,7 +405,7 @@ body {
   line-height: 110%;
   color: var(--text-color-one);
 }
-.work-experience-card .work-experience-content .company-tiles .company .company-details .company-role {
+.work-experience-card .work-experience-content .work-experience-slider .company-tiles .company .company-details .company-role {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;

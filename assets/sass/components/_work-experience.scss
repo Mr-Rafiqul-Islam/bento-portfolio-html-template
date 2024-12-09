@@ -1,54 +1,84 @@
 .work-experience-card {
+  position: relative;
+  &::before{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, #FFF 100%);
+    z-index: 99;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    content: "";
+  }
   .work-experience-content {
     height: 204px;
-    overflow-y: auto;
-    .company-tiles {
-      .year {
-        width: 129px;
-        height: 15px;
-        font-family: var(--font-family);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 110%;
-        color: var(--text-color-two);
+    overflow-y: hidden;
+    &:hover {
+      .work-experience-slider {
+        animation-play-state: paused;
       }
-      .company {
-        gap: 12px;
-        .company-img {
-          width: 30px;
-          height: 30px;
-          background: var(--bg-color-two);
-          border-radius: 8px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          img {
-            width: 20px;
-            height: 20px;
-          }
+    }
+    .work-experience-slider{
+      animation: scrollY 5s linear infinite;
+      @keyframes scrollY {
+        0% {
+          transform: translateY(0);
         }
-        .company-details {
-          .company-name {
-            font-family: var(--font-family);
-            font-style: normal;
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 110%;
-            color: var(--text-color-one);
+        100% {
+          transform: translateY(calc(-100% - 24px));
+
+        }
+      }
+      .company-tiles {
+        .year {
+          width: 129px;
+          height: 15px;
+          font-family: var(--font-family);
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 110%;
+          color: var(--text-color-two);
+        }
+        .company {
+          gap: 12px;
+          .company-img {
+            width: 30px;
+            height: 30px;
+            background: var(--bg-color-two);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+  
+            img {
+              width: 20px;
+              height: 20px;
+            }
           }
-          .company-role {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 110%;
-            color: var(--text-color-two);
-            margin-top: 8px;
+          .company-details {
+            .company-name {
+              font-family: var(--font-family);
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 110%;
+              color: var(--text-color-one);
+            }
+            .company-role {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 110%;
+              color: var(--text-color-two);
+              margin-top: 8px;
+            }
           }
         }
       }
     }
+    
+    
   }
 }
