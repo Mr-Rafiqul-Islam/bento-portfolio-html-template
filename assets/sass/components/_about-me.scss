@@ -1,38 +1,43 @@
-.about-me-image{
-background-color: var(--bg-color-two);
-border-radius: 8px;
-padding-top: 10px;
-margin-bottom: 24px;
+.about-me-image {
+  background-color: var(--bg-color-two);
+  border-radius: 8px;
+  padding-top: 10px;
+  margin-bottom: 24px;
 }
-.about-me-content{
-    .card-title{
-        margin-bottom: 8px !important;
+.about-me-content {
+  .name {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 110%;
+    color: var(--text-color-one);
+    margin-bottom: 8px !important;
+  }
+  .btn-grp {
+    margin-top: 24px;
+  }
+  .theme-btn-primary {
+    margin-right: 8px;
+  }
+  .about-me-social-icons {
+    margin-top: 34px;
+    gap: 8px;
+    a {
+      color: var(--text-color-two);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 120%;
+      width: 40px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: var(--bg-color-two);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      &:hover {
+        color: var(--primary-color);
+      }
     }
-    .btn-grp{
-        margin-top: 24px;
-    }
-    .theme-btn-primary{
-        margin-right: 8px;
-    }
-    .about-me-social-icons{
-        margin-top: 34px;
-        gap:8px;
-        a{
-            color: var(--text-color-two);
-            font-size: 24px;
-            font-weight: 500;
-            line-height: 120%;
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            background-color: var(--bg-color-two);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: var(--transition);
-            &:hover{
-                color: var(--primary-color);
-            }
-        }
-    }
+  }
 }

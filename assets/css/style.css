@@ -262,13 +262,16 @@ body {
 .card .card-body {
   padding: 0px;
 }
-.card .card-body .card-title {
+.card .card-body .card-headers {
+  margin-bottom: 24px;
+}
+.card .card-body .card-headers .card-title {
   font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
   line-height: 110%;
   color: var(--text-color-one);
-  margin-bottom: 24px;
+  margin-bottom: 0px;
 }
 .card .card-body .card-text {
   font-family: var(--font-family-2);
@@ -289,7 +292,12 @@ body {
   margin-bottom: 24px;
 }
 
-.about-me-content .card-title {
+.about-me-content .name {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 110%;
+  color: var(--text-color-one);
   margin-bottom: 8px !important;
 }
 .about-me-content .btn-grp {
