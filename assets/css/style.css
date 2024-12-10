@@ -442,3 +442,33 @@ body {
   line-height: 108%;
   color: var(--text-color-one);
 }
+
+.projects-view {
+  gap: 24px;
+}
+.projects-view .project-card {
+  padding: 0px 24px;
+  padding-top: 24px;
+  background: var(--bg-color-two);
+  border-radius: 8px;
+}
+.projects-view .project-card .project-img {
+  border-radius: 8px 8px 0px 0px;
+}
+.projects-view .project-card .project-view-btn {
+  background: var(--bg-color-three);
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  -webkit-box-shadow: 0px 12px 20px -6px rgba(26, 31, 44, 0.25);
+          box-shadow: 0px 12px 20px -6px rgba(26, 31, 44, 0.25);
+  font-size: 16px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.projects-view .project-card:hover .project-view-btn {
+  visibility: visible;
+  opacity: 1;
+}
