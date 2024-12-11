@@ -479,6 +479,20 @@ body {
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
+.projects-view .project-card .project-category {
+  left: 16px;
+  bottom: 16px;
+  color: var(--primary-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: white;
+}
 .projects-view .project-card:hover .project-view-btn {
   visibility: visible;
   opacity: 1;
