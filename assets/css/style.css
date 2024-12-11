@@ -41,6 +41,7 @@
   --bg-color-four: #f5f7f9;
   --body-background: #f0f2f5;
   --border-color: #dbdfe5;
+  --card-link-border:#0d6efd40;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
@@ -64,6 +65,7 @@
   --bg-color-four: #0b0d13;
   --body-background: #0b0c12;
   --border-color: #1a1f2c;
+  --card-link-border:#576076;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
@@ -264,6 +266,15 @@ body {
 }
 .card .card-body .card-headers {
   margin-bottom: 24px;
+}
+.card .card-body .card-headers .card-link {
+  border-bottom: 1px solid var(--card-link-border);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  color: var(--primary-color) !important;
+}
+.card .card-body .card-headers .card-link:hover {
+  border-bottom: 1px solid var(--primary-color);
 }
 .card .card-body .card-headers .card-title {
   font-family: var(--font-family);

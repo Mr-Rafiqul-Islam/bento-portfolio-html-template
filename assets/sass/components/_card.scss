@@ -9,7 +9,14 @@
         padding: 0px;
         .card-headers{
             margin-bottom: 24px;
-            
+            .card-link{
+                border-bottom: 1px solid var(--card-link-border);
+                transition: var(--transition);
+                color: var(--primary-color) !important;
+                &:hover{
+                    border-bottom: 1px solid var(--primary-color);
+                }
+            }
             .card-title{
                 font-family: var(--font-family);
                 font-weight: 600;
