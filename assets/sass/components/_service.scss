@@ -1,0 +1,18 @@
+.service-card {
+  border-radius: 16px;
+  background: var(--bg-color-two);
+  padding: 16px 16px 24px 16px;
+  .service-icon {
+    padding: 33px 54px;
+    background: var(--bg-color-three);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .service-title{
+    text-align: center;
+    font-size: 16px;
+  }
+}
