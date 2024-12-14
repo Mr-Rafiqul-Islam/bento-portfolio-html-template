@@ -1,0 +1,19 @@
+.footer-section {
+  padding: 24px 0px;
+  .footer-copyright {
+    p {
+      font-size: 14px;
+      line-height: 110%;
+      font-weight: 400;
+      color: var(--text-color-one);
+      margin: 0px;
+      a{
+        transition: var(--transition);
+        color: var(--primary-color);
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
