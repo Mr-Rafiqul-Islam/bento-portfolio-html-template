@@ -1,25 +1,38 @@
-.lets-work-together{
-    .scrolling-info{
-        padding: 18px 0px;
-        border-radius: 8px;
-        background: var(--bg-color-two);
-        margin-bottom: 22px;
-        .slider-item{
-            animation: scrolling 12s linear infinite;
-            p{
-                color: var(--text-color-two);
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 110%;
-            }
-        }
-        @keyframes scrolling {
-            0%{
-                transform: translateX(35%);
-            }
-            to{
-                transform: translateX(-100% - 1.5rem);
-            }
+.lets-work-together {
+    .card-link{
+        margin-top: 34px;
+        border-bottom: 1px solid var(--card-link-border);
+        transition: var(--transition);
+        &:hover{
+            border-bottom: 1px solid var(--primary-color);
         }
     }
+  .lets-work-together-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 110%;    
+  }
+  .scrolling-info {
+    padding: 18px 0px;
+    border-radius: 8px;
+    background: var(--bg-color-two);
+    margin-bottom: 22px;
+    .slider-item {
+      animation: scrolling 12s linear infinite;
+      p {
+        color: var(--text-color-two);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 110%;
+      }
+    }
+    @keyframes scrolling {
+      0% {
+        transform: translateX(35%);
+      }
+      to {
+        transform: translateX(-100%);
+      }
+    }
+  }
 }

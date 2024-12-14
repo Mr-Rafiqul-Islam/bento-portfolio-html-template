@@ -523,6 +523,20 @@ body {
   font-size: 16px;
 }
 
+.lets-work-together .card-link {
+  margin-top: 34px;
+  border-bottom: 1px solid var(--card-link-border);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.lets-work-together .card-link:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+.lets-work-together .lets-work-together-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+}
 .lets-work-together .scrolling-info {
   padding: 18px 0px;
   border-radius: 8px;
@@ -545,8 +559,8 @@ body {
             transform: translateX(35%);
   }
   to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @keyframes scrolling {
@@ -555,7 +569,7 @@ body {
             transform: translateX(35%);
   }
   to {
-    -webkit-transform: translateX(-101%);
-            transform: translateX(-101%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
