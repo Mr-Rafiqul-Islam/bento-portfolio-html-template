@@ -39,3 +39,31 @@
         }
 }
 }
+@media (max-width: 1399.98px) {
+    .card {
+        .card-body {
+            .card-headers {
+                .card-title {
+                    font-size: 22px;
+                    line-height: 110%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 369.98px) {
+    .card {
+        .card-body {
+            .card-headers {
+                .card-title {
+                    font-size: 15px;
+                }
+            }
+            .card-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    
+}

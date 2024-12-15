@@ -24,3 +24,11 @@
         right: 9%;
     }
 }
+
+@media (max-width: 1399.98px) {
+    .background-shapes{
+        .object-shape{
+            display: none;
+        }
+    }
+}

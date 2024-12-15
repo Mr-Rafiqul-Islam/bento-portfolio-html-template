@@ -2,6 +2,7 @@
   border-radius: 16px;
   background: var(--bg-color-two);
   padding: 16px 16px 24px 16px;
+  height: 100%;
   .service-icon {
     padding: 33px 54px;
     background: var(--bg-color-three);
@@ -11,8 +12,16 @@
     justify-content: center;
     margin-bottom: 16px;
   }
-  .service-title{
+  .service-title {
     text-align: center;
     font-size: 16px;
+  }
+}
+
+@media (max-width: 369.98px) {
+  .service-card {
+    .service-icon {
+      padding: 25px 40px;
+    }
   }
 }

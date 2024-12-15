@@ -190,6 +190,18 @@ body {
   border-color: transparent;
 }
 
+@media (max-width: 1399.98px) {
+  .theme-btn {
+    font-size: 15px;
+    padding: 16px 11px;
+  }
+}
+@media (max-width: 369.98px) {
+  .theme-btn {
+    font-size: 10px;
+    padding: 11px 10px;
+  }
+}
 /*=============================
 	03. Header CSS start
 ===============================*/
@@ -277,6 +289,11 @@ body {
   right: 9%;
 }
 
+@media (max-width: 1399.98px) {
+  .background-shapes .object-shape {
+    display: none;
+  }
+}
 .card {
   border: none;
   border-radius: 16px;
@@ -321,6 +338,20 @@ body {
   color: var(--text-color-one);
 }
 
+@media (max-width: 1399.98px) {
+  .card .card-body .card-headers .card-title {
+    font-size: 22px;
+    line-height: 110%;
+  }
+}
+@media (max-width: 369.98px) {
+  .card .card-body .card-headers .card-title {
+    font-size: 15px;
+  }
+  .card .card-body .card-text {
+    font-size: 14px;
+  }
+}
 .about-me-image {
   background-color: var(--bg-color-two);
   border-radius: 8px;
@@ -371,6 +402,14 @@ body {
   color: var(--primary-color);
 }
 
+@media (max-width: 369.98px) {
+  .about-me-content .name {
+    font-size: 22px;
+  }
+  .about-me-content .about-me-social-icons {
+    margin-top: 25px;
+  }
+}
 .work-experience-card {
   position: relative;
 }
@@ -527,6 +566,7 @@ body {
   border-radius: 16px;
   background: var(--bg-color-two);
   padding: 16px 16px 24px 16px;
+  height: 100%;
 }
 .service-card .service-icon {
   padding: 33px 54px;
@@ -548,6 +588,11 @@ body {
   font-size: 16px;
 }
 
+@media (max-width: 369.98px) {
+  .service-card .service-icon {
+    padding: 25px 40px;
+  }
+}
 .lets-work-together .card-link {
   margin-top: 34px;
   border-bottom: 1px solid var(--card-link-border);
@@ -599,6 +644,14 @@ body {
   }
 }
 
+@media (max-width: 767.98px) {
+  .lets-work-together .lets-work-together-title {
+    font-size: 30px;
+  }
+  .lets-work-together .card-link {
+    margin-top: 24px;
+  }
+}
 .footer-section {
   padding: 24px 0px;
 }

@@ -1,16 +1,16 @@
 .lets-work-together {
-    .card-link{
-        margin-top: 34px;
-        border-bottom: 1px solid var(--card-link-border);
-        transition: var(--transition);
-        &:hover{
-            border-bottom: 1px solid var(--primary-color);
-        }
+  .card-link {
+    margin-top: 34px;
+    border-bottom: 1px solid var(--card-link-border);
+    transition: var(--transition);
+    &:hover {
+      border-bottom: 1px solid var(--primary-color);
     }
+  }
   .lets-work-together-title {
     font-weight: 600;
     font-size: 40px;
-    line-height: 110%;    
+    line-height: 110%;
   }
   .scrolling-info {
     padding: 18px 0px;
@@ -33,6 +33,17 @@
       to {
         transform: translateX(-100%);
       }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .lets-work-together {
+    .lets-work-together-title {
+      font-size: 30px;
+    }
+    .card-link {
+      margin-top: 24px;
     }
   }
 }
