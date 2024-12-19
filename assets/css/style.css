@@ -670,3 +670,30 @@ body {
 .footer-section .footer-copyright p a:hover {
   text-decoration: underline;
 }
+
+.about-box-content .intro-section {
+  margin-bottom: 48px;
+}
+.about-box-content .intro-section .intro-text {
+  max-width: 540px;
+}
+.about-box-content .intro-section .intro-text .intro-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 110%;
+  color: var(--text-color-one);
+}
+.about-box-content .intro-section .intro-text .intro-title span {
+  color: var(--primary-color);
+}
+.about-box-content .intro-section .intro-text .intro-info {
+  font-family: var(font-family-2);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: var(--text-color-two);
+  margin-top: 24px;
+}
+.about-box-content .intro-section .intro-text .intro-info strong {
+  color: var(--text-color-one);
+}

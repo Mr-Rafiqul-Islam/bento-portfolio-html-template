@@ -1,0 +1,28 @@
+.about-box-content {
+  .intro-section {
+    margin-bottom: 48px;
+    .intro-text {
+      max-width: 540px;
+      .intro-title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 110%;
+        color: var(--text-color-one);
+        span {
+          color: var(--primary-color);
+        }
+      }
+      .intro-info {
+        font-family: var(font-family-2);
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 150%;
+        color: var(--text-color-two);
+        margin-top: 24px;
+        strong{
+            color: var(--text-color-one);
+        }
+      }
+    }
+  }
+}
