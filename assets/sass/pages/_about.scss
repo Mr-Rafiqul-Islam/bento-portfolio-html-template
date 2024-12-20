@@ -19,8 +19,49 @@
         line-height: 150%;
         color: var(--text-color-two);
         margin-top: 24px;
-        strong{
-            color: var(--text-color-one);
+        strong {
+          color: var(--text-color-one);
+        }
+      }
+    }
+    .availablity-badge {
+      width: 196px;
+      height: 36px;
+      background: var(--bg-color-two);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .available-badge {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 110%;
+        color: var(--primary-color);
+        i {
+          font-size: 8px;
+          margin-right: 12px;
+          position: relative;
+          &::after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 100%;
+            height: 100%;
+            background-color: rgba(71, 112, 255, 0.3);
+            border-radius: 50%;
+            content: "";
+            animation: live 1s ease-in-out infinite;
+          }
+          @keyframes live {
+            0% {
+              transform: translate(-50%, -50%) scale(1)
+            }
+          
+            100% {
+              transform: translate(-50%, -50%) scale(2.4);
+              background-color: transparent
+            }
+          }
         }
       }
     }
