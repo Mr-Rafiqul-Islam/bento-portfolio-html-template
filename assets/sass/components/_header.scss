@@ -1,70 +1,107 @@
 /*=============================
 	03. Header CSS start
 ===============================*/
-.header-section{
-	margin: 24px 0px;
-	.navbar{
-		padding: 0px;
-		
-		.navbar-inner{
-			background: var(--bg-color-three);
-			border-radius: 16px;
-			padding: 10px 10px 10px 24px;
-			box-shadow: var(--box-shadow);
-			width: 100%;
+.header-section {
+  margin: 24px 0px;
+  .navbar {
+    padding: 0px;
+
+    .navbar-inner {
+      background: var(--bg-color-three);
+      border-radius: 16px;
+      padding: 10px 10px 10px 24px;
+      box-shadow: var(--box-shadow);
+      width: 100%;
+      .menu-control {
+        background: var(--bg-color-one);
+        color: var(--text-color-six);
+        border: none;
+        padding: 0px 6px;
+        border-radius: 2px;
+      }
+      @media (max-width: 991.98px) {
+        .navbar-collapse {
+          position: fixed;
+          background-color: var(--bg-color-three);
+          top: 0;
+          left: 0;
+          width: 250px;
+          height: 100vh;
+          display: block;
+          z-index: 999;
+          padding: 24px;
+          .navbar-nav {
+            .nav-item {
+              margin: 10px 0px;
+            }
+          }
+        }
+      }
+    }
+    .navbar-brand {
+      color: var(--text-color-one) !important;
+      gap: 12px;
+      font-size: 24px;
+      line-height: 120%;
+      font-weight: 600;
+
+      .logo-name {
+        span {
+          color: var(--primary-color);
+        }
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: var(--text-color-two);
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 120%;
+          gap: 8px;
+          padding: 8px 12px;
+          border-radius: 8px;
+          svg {
+            stroke: var(--text-color-four);
+            stroke-width: 1.2;
+            transition: var(--transition);
+            width: 20px;
+            height: 20px;
+          }
+          &.active {
+            background: var(--bg-color-two);
+            color: var(--text-color-one);
+            svg {
+              stroke: var(--text-color-one);
+            }
+          }
+          &:hover {
+            background: var(--bg-color-two);
+            color: var(--text-color-one);
+            svg {
+              stroke: var(--text-color-one);
+            }
+          }
+        }
+      }
+    }
+
+    .header-action {
+		@media (max-width: 991.98px) {
+			position: absolute;
+			bottom: 30px;
+			z-index: 999;
 		}
-		.navbar-brand{
-			color: var(--text-color-one) !important;
-			gap: 12px;
-			font-size: 24px;
-			line-height: 120%;
-			font-weight: 600;
-			
-			.logo-name{
-				span{
-					color: var(--primary-color);
-				}
+		.theme-btn{
+			@media (max-width: 991.98px) {
+				width: 100%;
+				text-align: center;
+				margin-top: 10px;
 			}
 		}
-		.navbar-nav{
-			.nav-item{
-				.nav-link{
-					color: var(--text-color-two);
-					font-size: 16px;
-					font-weight: 500;
-					line-height: 120%;
-					gap: 8px;
-					padding: 8px 12px;
-					border-radius: 8px;
-					svg{
-						stroke: var(--text-color-four);
-						stroke-width: 1.2;
-						transition: var(--transition);
-						width: 20px;
-  						height: 20px;
-					}
-					&.active{
-						background: var(--bg-color-two);
-						color: var(--text-color-one);
-						svg{
-							stroke: var(--text-color-one);
-						}
-					}
-					&:hover{
-						background: var(--bg-color-two);
-						color: var(--text-color-one);
-						svg{
-							stroke: var(--text-color-one);
-						}
-					}
-				}
-			}
-		}
-		.header-action{
-			.theme-control-btn{
-				margin-right: 16px;
-			}
-			
-		}
-	}
+      .theme-control-btn {
+        margin-right: 16px;
+      }
+    }
+  }
 }
