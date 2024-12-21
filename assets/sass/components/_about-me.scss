@@ -42,13 +42,25 @@
   }
 }
 
-@media (max-width: 369.98px) {
+@media (max-width: 1399.98px) {
+  .about-me-content {
+    .theme-btn {
+      font-size: 15px;
+      padding: 16px 11px;
+    }
+  }
+}
+@media (max-width: 387.98px) {
   .about-me-content {
     .name {
       font-size: 22px;
     }
     .about-me-social-icons {
       margin-top: 25px;
+    }
+    .theme-btn {
+      font-size: 10px;
+      padding: 11px 8px;
     }
   }
 }

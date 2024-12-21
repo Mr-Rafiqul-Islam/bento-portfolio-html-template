@@ -190,16 +190,13 @@ body {
   border-color: transparent;
 }
 
-@media (max-width: 1399.98px) {
+@media (max-width: 1199.98px) {
   .theme-btn {
-    font-size: 15px;
-    padding: 16px 11px;
+    font-size: 11px;
+    padding: 8px 6px;
   }
-}
-@media (max-width: 369.98px) {
-  .theme-btn {
-    font-size: 10px;
-    padding: 11px 10px;
+  .theme-btn svg {
+    width: 19px;
   }
 }
 /*=============================
@@ -402,12 +399,22 @@ body {
   color: var(--primary-color);
 }
 
-@media (max-width: 369.98px) {
+@media (max-width: 1399.98px) {
+  .about-me-content .theme-btn {
+    font-size: 15px;
+    padding: 16px 11px;
+  }
+}
+@media (max-width: 387.98px) {
   .about-me-content .name {
     font-size: 22px;
   }
   .about-me-content .about-me-social-icons {
     margin-top: 25px;
+  }
+  .about-me-content .theme-btn {
+    font-size: 10px;
+    padding: 11px 8px;
   }
 }
 .work-experience-card {
@@ -677,12 +684,12 @@ body {
 .about-box-content .intro-section .intro-text {
   max-width: 540px;
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1399.98px) {
   .about-box-content .intro-section .intro-text {
-    max-width: 440px;
+    max-width: 420px;
   }
 }
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 991.98px) {
   .about-box-content .intro-section .intro-text {
     max-width: 440px;
   }
@@ -696,7 +703,7 @@ body {
 .about-box-content .intro-section .intro-text .intro-title span {
   color: var(--primary-color);
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1399.98px) {
   .about-box-content .intro-section .intro-text .intro-title {
     font-size: 32px;
   }
@@ -717,7 +724,7 @@ body {
 .about-box-content .intro-section .intro-text .intro-info strong {
   color: var(--text-color-one);
 }
-@media screen and (max-width: 991.98px) {
+@media screen and (max-width: 1399.98px) {
   .about-box-content .intro-section .intro-text .intro-info {
     font-size: 18px;
   }
@@ -786,5 +793,10 @@ body {
     -webkit-transform: translate(-50%, -50%) scale(2.4);
             transform: translate(-50%, -50%) scale(2.4);
     background-color: transparent;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .about-box-content .intro-section .availablity-badge .available-badge {
+    font-size: 16px;
   }
 }

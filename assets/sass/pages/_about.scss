@@ -3,11 +3,11 @@
     margin-bottom: 48px;
     .intro-text {
       max-width: 540px;
-      @media screen and (max-width: 991.98px) {
-        max-width: 440px;
+      @media screen and (max-width: 1399.98px) {
+        max-width: 420px;
         
       }
-      @media screen and (max-width: 767.98px) {
+      @media screen and (max-width: 991.98px) {
         max-width: 440px;
         
       }
@@ -19,7 +19,7 @@
         span {
           color: var(--primary-color);
         }
-        @media screen and (max-width: 991.98px) {
+        @media screen and (max-width: 1399.98px) {
           font-size: 32px;
         }
         @media screen and (max-width: 767.98px) {
@@ -37,7 +37,7 @@
         strong {
           color: var(--text-color-one);
         }
-        @media screen and (max-width: 991.98px) {
+        @media screen and (max-width: 1399.98px) {
           font-size: 18px;
         }
         @media screen and (max-width: 767.98px) {
@@ -84,6 +84,9 @@
               background-color: transparent
             }
           }
+        }
+        @media screen and (max-width: 575.98px) {
+          font-size: 16px;
         }
       }
     }
