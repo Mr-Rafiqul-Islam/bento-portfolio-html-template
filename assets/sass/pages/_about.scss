@@ -7,6 +7,10 @@
         max-width: 440px;
         
       }
+      @media screen and (max-width: 767.98px) {
+        max-width: 440px;
+        
+      }
       .intro-title {
         font-weight: 600;
         font-size: 40px;
@@ -17,6 +21,10 @@
         }
         @media screen and (max-width: 991.98px) {
           font-size: 32px;
+        }
+        @media screen and (max-width: 767.98px) {
+          font-size: 26px;
+          
         }
       }
       .intro-info {
@@ -31,6 +39,10 @@
         }
         @media screen and (max-width: 991.98px) {
           font-size: 18px;
+        }
+        @media screen and (max-width: 767.98px) {
+          font-size: 16px;
+          
         }
       }
     }

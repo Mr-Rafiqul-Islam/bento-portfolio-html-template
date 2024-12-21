@@ -682,6 +682,11 @@ body {
     max-width: 440px;
   }
 }
+@media screen and (max-width: 767.98px) {
+  .about-box-content .intro-section .intro-text {
+    max-width: 440px;
+  }
+}
 .about-box-content .intro-section .intro-text .intro-title {
   font-weight: 600;
   font-size: 40px;
@@ -694,6 +699,11 @@ body {
 @media screen and (max-width: 991.98px) {
   .about-box-content .intro-section .intro-text .intro-title {
     font-size: 32px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about-box-content .intro-section .intro-text .intro-title {
+    font-size: 26px;
   }
 }
 .about-box-content .intro-section .intro-text .intro-info {
@@ -710,6 +720,11 @@ body {
 @media screen and (max-width: 991.98px) {
   .about-box-content .intro-section .intro-text .intro-info {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .about-box-content .intro-section .intro-text .intro-info {
+    font-size: 16px;
   }
 }
 .about-box-content .intro-section .availablity-badge {
