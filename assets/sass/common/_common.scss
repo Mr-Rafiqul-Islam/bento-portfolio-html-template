@@ -44,14 +44,18 @@
   --bg-color-four: #f5f7f9;
   --body-background: #f0f2f5;
   --border-color: #dbdfe5;
-  --card-link-border:#0d6efd40;
+  --card-link-border: #0d6efd40;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
   --transition: all 0.3s linear;
   --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
-  --linear-overlay-shed: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, #FFF 100%);
+  --linear-overlay-shed: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #fff 100%
+  );
 }
 
 [data-bs-theme="dark"] {
@@ -68,14 +72,18 @@
   --bg-color-four: #0b0d13;
   --body-background: #0b0c12;
   --border-color: #1a1f2c;
-  --card-link-border:#576076;
+  --card-link-border: #576076;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
   --transition: all 0.3s linear;
   --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
-  --linear-overlay-shed: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+  --linear-overlay-shed: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    #000000 100%
+  );
 }
 /*=============================
 	02. Common CSS start
@@ -191,13 +199,13 @@ body {
   }
 }
 
-
 @media (max-width: 1199.98px) {
   .theme-btn {
     font-size: 11px;
-    padding: 8px 6px;
-    svg{
+    padding: 8px 12px;
+
+    svg {
       width: 19px;
     }
-}
+  }
 }

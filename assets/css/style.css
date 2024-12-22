@@ -41,14 +41,18 @@
   --bg-color-four: #f5f7f9;
   --body-background: #f0f2f5;
   --border-color: #dbdfe5;
-  --card-link-border:#0d6efd40;
+  --card-link-border: #0d6efd40;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
   --transition: all 0.3s linear;
   --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
-  --linear-overlay-shed: linear-gradient(180deg, rgba(255, 255, 255, 0.50) 0%, #FFF 100%);
+  --linear-overlay-shed: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #fff 100%
+  );
 }
 
 [data-bs-theme=dark] {
@@ -65,14 +69,18 @@
   --bg-color-four: #0b0d13;
   --body-background: #0b0c12;
   --border-color: #1a1f2c;
-  --card-link-border:#576076;
+  --card-link-border: #576076;
   --font-family: "Bricolage Grotesque", sans-serif;
   --font-family-2: "Inter", sans-serif;
   --font-size: 16px;
   --font-weight: 500;
   --transition: all 0.3s linear;
   --shadow: 0px 1px 3px rgba(26, 31, 44, 0.25);
-  --linear-overlay-shed: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, #000000 100%);
+  --linear-overlay-shed: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    #000000 100%
+  );
 }
 
 /*=============================
@@ -193,7 +201,7 @@ body {
 @media (max-width: 1199.98px) {
   .theme-btn {
     font-size: 11px;
-    padding: 8px 6px;
+    padding: 8px 12px;
   }
   .theme-btn svg {
     width: 19px;
@@ -207,6 +215,12 @@ body {
 }
 .header-section .navbar {
   padding: 0px;
+}
+@media (max-width: 991.98px) {
+  .header-section .navbar .mobile-menu-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
 }
 .header-section .navbar .navbar-inner {
   background: var(--bg-color-three);
@@ -304,10 +318,21 @@ body {
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    font-size: 15px;
   }
 }
 .header-section .navbar .header-action .theme-control-btn {
   margin-right: 16px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 1199.98px) {
+  .header-section .navbar .header-action .theme-control-btn {
+    margin-right: 5px;
+  }
 }
 .header-section .navbar .header-action .theme-control-btn .theme-text {
   font-size: 14px;
@@ -321,6 +346,12 @@ body {
     display: flex;
     gap: 10px;
     margin-right: 0;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+  }
+  .header-section .navbar .header-action .theme-control-btn:hover {
+    background: var(--bg-color-two) !important;
   }
 }
 

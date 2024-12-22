@@ -3,9 +3,15 @@
 ===============================*/
 .header-section {
   margin: 24px 0px;
+
   .navbar {
     padding: 0px;
-
+    .mobile-menu-overlay {
+      @media (max-width: 991.98px) {
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 999;
+      }
+    }
     .navbar-inner {
       background: var(--bg-color-three);
       border-radius: 16px;
@@ -20,7 +26,7 @@
         border-radius: 2px;
       }
       @media (max-width: 991.98px) {
-        .collapse:not(.show){
+        .collapse:not(.show) {
           display: flex;
           flex-direction: column;
           align-items: flex-start;
@@ -97,24 +103,39 @@
         margin-top: auto;
         width: 100%;
       }
+
       .theme-btn {
         @media (max-width: 991.98px) {
           width: 100%;
           text-align: center;
           margin-top: 10px;
+          font-size: 15px;
         }
       }
       .theme-control-btn {
-        .theme-text{
-          font-size: 14px;
-        font-weight: 400;
-        color: var(--text-color-two);
-        }
         margin-right: 16px;
+        transition: var(--transition);
+        align-items: center;
+        
+        @media (max-width: 1199.98px) {
+          margin-right: 5px;
+          
+        }
+        .theme-text {
+          font-size: 14px;
+          font-weight: 400;
+          color: var(--text-color-two);
+        }
         @media (max-width: 991.98px) {
           display: flex;
           gap: 10px;
           margin-right: 0;
+          width: 100%;
+          height: 40px;
+          padding: 0 15px;
+          &:hover {
+            background: var(--bg-color-two) !important;
+          }
         }
       }
     }
