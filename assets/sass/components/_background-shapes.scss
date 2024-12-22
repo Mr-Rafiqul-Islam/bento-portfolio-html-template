@@ -2,13 +2,24 @@
     .common-shape{
         position: fixed;
         z-index: -1;
+        animation: rotateAnimation 60s infinite linear;
+        @keyframes rotateAnimation {
+            from {
+                transform: rotate(0deg);
+            }
+        
+            to {
+                transform: rotate(360deg);
+                /* Rotates the element 360 degrees */
+            }
+        }
         &.shape-1{
-            top: 0;
-            left: 0;
+            top: -20%;
+            left: -20%;
         }
         &.shape-2{
-            bottom: 0;
-            right: 0;
+            bottom: -20%;
+            right: -20%;
         }
     }
     .object-shape{
