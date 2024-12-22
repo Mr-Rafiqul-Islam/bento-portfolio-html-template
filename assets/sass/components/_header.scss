@@ -3,6 +3,9 @@
 ===============================*/
 .header-section {
   margin: 24px 0px;
+  position: sticky;
+  top: 0px;
+  z-index: 99;
 
   .navbar {
     padding: 0px;
