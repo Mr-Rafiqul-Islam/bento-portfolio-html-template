@@ -1,6 +1,21 @@
 (function ($) {
   "use strict";
 
+  // Theme control js
+  $(document).ready(function () {
+    // Load the theme from localStorage and apply it
+    const storedTheme = localStorage.getItem("theme") || "light";
+    $("html").attr("data-bs-theme", storedTheme);
+
+    // Toggle theme and store it in localStorage
+    function toggleTheme() {
+      const newTheme = $("html").attr("data-bs-theme") === "light" ? "dark" : "light";
+      $("html").attr("data-bs-theme", newTheme);
+      localStorage.setItem("theme", newTheme);
+    }
+    $("#themeToggleButton").on("click", toggleTheme);
+  });
+
   // for mobile menu control js
   $(".menu-control-btn").on("click", function () {
     $(".navbar-collapse, .mobile-menu-overlay").addClass("open");

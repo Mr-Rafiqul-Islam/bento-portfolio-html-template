@@ -85,6 +85,18 @@
     #000000 100%
   );
 }
+
+.theme-icon {
+  display: none;
+}
+
+[data-bs-theme=light] .theme-icon.light-mode {
+  display: block;
+}
+
+[data-bs-theme=dark] .theme-icon.dark-mood {
+  display: block;
+}
 /*=============================
 	02. Common CSS start
 ===============================*/
